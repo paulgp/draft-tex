@@ -1,0 +1,90 @@
+\include{Preamble}
+
+% Decimal align 
+\usepackage{dcolumn}
+\newcolumntype{d}[0]{D{.}{.}{5}}
+
+% Spaces in file path
+\usepackage{graphicx}
+\usepackage[space]{grffile}
+
+ 
+\title{\textbf{\LARGE{PAPER TITLE}}\thanks{First version: DATE. This version: \today.  ACKNOWLEDGEMENTS HERE}}
+
+\author{
+	AUTHOR 1\thanks{UNIVERSITY 1. Email: \href{mailto:author@address.com}{author@address.com}} \and
+	AUTHOR 2\thanks{UNIVERSITY 2. Email: \href{mailto:author@address.com}{author@address.com}} \and 
+	AUTHOR 3\thanks{UNIVERSITY 3. Email: \href{mailto:author@address.com}{author@address.com}} \and 
+	AUTHOR 4\thanks{INSTITUTION 1. Email: \href{mailto:author@address.com}{author@address.com}} 
+	}
+			
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty} 
+\setcounter{page}{0}
+
+\begin{abstract}
+ABSTRACT HERE
+
+\end{abstract}
+
+
+	  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Text
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\clearpage
+TEXT HERE
+\newpage
+\singlespacing 
+\bibliographystyle{aea}
+%\bibliography{bibliography.bib}
+
+\onehalfspacing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%Figures and tables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\input{Figures.tex}
+%\input{Tables.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Appendices
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\clearpage  
+\appendix
+
+\renewcommand{\thefigure}{A\arabic{figure}}
+\setcounter{figure}{0}
+
+\renewcommand{\thetable}{A\arabic{table}}
+\setcounter{table}{0}
+
+
+\clearpage
+\begin{center}
+\vspace{-1.8cm}{\LARGE \textbf{PAPER TITLE}}\medskip \\
+	\Large \textbf{Online Appendix} \bigskip \\
+\large AUTHOR NAME 1 \hspace{0.3cm} AUTHOR NAME 2 \hspace{0.3cm} AUTHOR NAME 3 \hspace{0.3cm} AUTHOR NAME 4 \bigskip
+	
+\end{center}
+
+
+%\input{Appendix_text.tex}
+
+%\clearpage
+%\input{Appendix_figures.tex}
+
+%\clearpage
+%\input{Appendix_tables.tex}
+
+
+
+
+\end{document}
